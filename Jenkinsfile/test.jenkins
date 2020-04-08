@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'php:7.2.13-fpm' } }
+
     stages {
         stage('build') {
             steps {
-                sh 'php --version'
+                sh 'echo 123'
             }
         }
     }
