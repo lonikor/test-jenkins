@@ -1,6 +1,5 @@
-#!groovy
 pipeline {
-    agent { docker { image 'php:7.2.13-fpm' } }
+    agent { docker { image 'php' } }
     stages {
         stage('build') {
             steps {
